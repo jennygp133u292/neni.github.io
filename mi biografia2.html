@@ -1,0 +1,210 @@
+<html>
+<head>
+<title> Programacion Colegio Mixto Integral </title>
+<body bgcolor="#171712" text="#F5F5F5">
+<center> <h1> <Font color="#800B08"> Mi Biografia </font> </h1> </center>
+
+      <div class="column"> </div>
+
+<center> <h1> Jennifer Vanesa Garcia Perez </h1> </center>
+
+<hr> 
+
+<p>Mi nombre es Jennifer Vanesa García Pérez, nací el 27 de febrero de 2007 en 
+Guastatoya El Progreso Guatemala. Mis padres son Jennifer Yadira Pérez 
+Carranza y Melkin Estuardo García Aceituno. Mis hermanos Jefferson Estuardo 
+García Pérez (23/05/2005-15/09/2005) y Deivid Estuardo García Pérez. </p> 
+
+<p>Desde mi nacimiento he vivido siempre en el mismo lugar, enla Aldea de Santa 
+Rita. </p> 
+
+<p>Vengo de una familia muy honrada y trabajadora. Desde muy pequeña mis 
+padres me han enseñado el valor de las cosas y lo que cuesta ganar el dinero. 
+Mis padres comenzaron a trabajar desde muy temprana edad.</p> 
+  
+<p>Por parte de mi familia paterna eran terratenientes que se dedicaban al cultivo 
+de banano y plátano, mis abuelos y tatarabuelos por parte de mi papá por 
+muchos años mantuvieron sus cultivos sobre las orillas del rio Motagua en 
+Izabal el cual hasta el día de hoy todavía lo siguen manteniendo a pesar de las 
+circunstancias con las que se han presentado durante este lapso de tiempo, 
+háblese de huracanes, crecidas de rio y plagas. Según me cuentas mis 
+familiares los golpes más fuertes a su economía y a sus cultivos los provocaron 
+los huracanes; El Mitch, el 22 de octubre de 1998 y el huracán Agatha el 21 de 
+mayo de 2010. Este último no fue categorizado como un huracán si no como 
+una tormenta tropical.</p>   
+
+<p>Cuando esto les ocurría se trasladaban a las partes montañosas a la cosecha 
+de café y tala de árboles.</p>
+   
+<p>Por parte de mi familia materna eran comerciantes informales. Todo comenzó 
+desde mis bisabuelas, se especializaron en la venta de comidas, conservas y el 
+famoso ponche de leche con piquete. Entre las comidas más populares están 
+las tortillas de harina y los churrascos.   
+
+<p>Hoy en día muy pocos siguieron con la tradición de la venta de comida. Mi 
+mamá por su parte en muy pocas ocasiones la realiza.  
+En resumen, vengo de una familia que se ha dedicado su vida entera al trabajo 
+propio con honradez y humildad.</p>
+   
+<p>Yo por mi parte quiero romper con lo practicado, quiero estudiar medicina. Pero 
+de igual manera agradezco a mis raíces por los valores inculcados que, aunque 
+no siga sus mismos pasos pienso poner en práctica la honradez y humildad con 
+la que ellos han trabajado durante años para aplicarlo en lo mío.</p>    
+
+<p>Y Ahora en el presente 2024 estoy en mi último año de carrera, logre graduarme como auxiliar de enfermería, tuve buenas calificaciones y logre terminar mi  carrera con honores. Aun sigo estudiando mi bachillerato, en unos meses lograre graduarme y seguir con mis planes de entrar a la universidad para poder estudiar Medicina. </P> 
+</hr>
+
+<div class="column"> </div>
+
+<center> <h1> Fotografias </h1> </center>
+<center> <img src="C:\Users\jg933\OneDrive\Pictures\IMG-20240930-WA0036.jpg">
+<center> <img src="C:\Users\jg933\OneDrive\Pictures\IMG_20240627_220513_756.jpg">
+<center> <img src="C:\Users\jg933\OneDrive\Pictures\IMG-20240913-WA0005.jpg">
+<center> <img src="C:\Users\jg933\OneDrive\Pictures\IMG-20240704-WA0002(1).jpg"> 
+
+<hr>
+
+<video width="320" heigth="240" autoplay controls> 
+      <source src="C:\Users\jg933\Downloads\video.mp4.mp4" type="video/mp4">
+</video>
+
+
+ </style>
+<title> Colegio Mixto Integral El Progreso </title>
+<body bgcolor="#171712" text="#F5F5F5">
+<h1>Deja tu comentario</h1>
+    <form action="/submit_comment" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+<script language='javascript' type='text/javascript'>
+//Cursor con texto en movimiento
+
+//<![CDATA[
+var x,y
+var tempo = 10
+var espera = 0
+
+var texto = "✨✨✨✨✨✨"
+
+texto = texto.split("")
+
+var xpos = new Array()
+for (i = 0; i <= texto.length - 1; i++) {
+xpos[i] = -50
+}
+var ypos = new Array()
+for (i = 0; i <= texto.length - 1; i++) {
+ypos[i] = -50
+
+}
+
+function seguir(e){
+
+//si no es NS4, usa objeto window.event
+if (!e) var e = window.event
+
+//NS4
+if (e.pageX || e.pageY) {
+x = e.pageX
+y = e.pageY
+window.status = x + ' : ' + y
+//IE y compatibles con DOM
+} else if (e.clientX || e.clientY) {
+x = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft
+y = e.clientY + document.body.scrollTop + document.documentElement.scrollTop
+window.status = x + ' : ' + y
+//no soportado, no hace nada
+} else {
+return
+}
+
+espera = 1
+}
+
+function animar_cursor() {
+
+if ( espera == 1 ) {
+for ( i = texto.length - 1; i >= 1; i--) {
+xpos[i] = xpos[i-1] + tempo
+ypos[i] = ypos[i-1]
+}
+xpos[0] = x + tempo
+ypos[0] = y
+}
+
+//para el IE 4.x
+if ( espera==1 && document.all ) {
+for (i = 0; i <= texto.length - 1; i++) {
+var letra = eval("span" + i + ".style")
+letra.posLeft = xpos[i]
+letra.posTop = ypos[i]
+}
+}
+//para el Netscape 4.x
+else if ( espera==1 && document.layers ) {
+for (i = 0; i <= texto.length - 1; i++) {
+var letra = eval("document.span" + i)
+letra.left = xpos[i]
+letra.top = ypos[i]
+}
+}
+
+//para navegadores compatibles DOM
+else if ( espera==1 && document.getElementById ) {
+
+for (i = 0; i <= texto.length - 1; i++) {
+var letra = document.getElementById( "span" + i)
+
+letra.style.left = xpos[i] + 'px'
+letra.style.top = ypos[i] + 'px'
+}
+}
+
+var timer = setTimeout("animar_cursor()", 30)
+}
+
+if (document.layers)
+document.captureEvents(Event.MOUSEMOVE)
+document.onmousemove = seguir
+//]]>
+</script>
+<style type='text/css'>
+.cursoranimado {
+position:absolute;
+visibility:visible;
+top:-50px;
+font-size:11pt;
+font-family:Arial;
+font-weight:bold;
+color:red;
+}
+</style>
+<script language='javascript' type='text/javascript'>
+//<![CDATA[
+if (document.layers) {
+for (i=0;i<=texto.length-1;i++) {
+document.write('<span id="span' + i + '" class="cursoranimado">')
+document.write(texto[i])
+document.write('</span>')
+}
+} else if (document.all || document.getElementById) {
+for (i=0;i<=texto.length-1;i++) {
+document.write('<div id="span' + i + '" class="cursoranimado">')
+document.write(texto[i])
+document.write('</div>')
+}
+}
+animar_cursor()
+//]]>
+</script>
+<div id="sfc28pr4k6pgm3jys97ktyxxy87r8zkxc3m"></div><script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=28pr4k6pgm3jys97ktyxxy87r8zkxc3m&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas para web"><img src="https://counter6.optistats.ovh/private/contadorvisitasgratis.php?c=28pr4k6pgm3jys97ktyxxy87r8zkxc3m" border="0" title="contador de visitas para web" alt="contador de visitas para web"></a></noscript>
+
+
+
+</body>
+</html>
